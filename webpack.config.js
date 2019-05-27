@@ -24,7 +24,6 @@ module.exports = (env, argv) => {
                     use: [
                         {
                             loader: MiniCssExtractPlugin.loader,
-                            options: { publicPath: 'assets/styles' }
                         },
                         {
                             loader: 'css-loader',
