@@ -1,0 +1,14 @@
+// This file compiles into your main.css file, meant for global styles.
+
+@import 'common/mixins';
+@import 'common/fonts';
+
+// Bootstrap Specific Styles
+@import '~bootstrap/scss/_functions'; // Required for custom sass variables
+@import 'common/variables'; // Custom bootstrap 4 variables (colors, font-sizing, etc)
+@import '~bootstrap/scss/bootstrap'; // Base Bootstrap Styles
+
+// Custom Styles Below. Feel free to import additional files to add to this bundle.
+
+// @import 'common/globals';
+// @import 'pages/pages.scss';
