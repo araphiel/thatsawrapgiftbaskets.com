@@ -1,97 +1,3 @@
-:root {
-    --css: red
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    @include media-breakpoint-up(xs) {
-        font-size: 0.9rem;
-    }
-
-    @include media-breakpoint-up(sm) {
-        font-size: 0.925rem;
-    }
-      
-    @include media-breakpoint-up(md) {
-        font-size: 0.95rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-        font-size: 1rem;
-    }
-}
-
-body {
-    padding: calc(1.25rem * 1 / 1 + 0px);
-
-    &::before,
-    &::after {
-        border: calc(1.25rem * 1 / 1 + 0px) solid transparent;
-        z-index: 100;
-        position: fixed;
-        content: '';
-        user-select: none;
-        pointer-events: none;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        will-change: border-color;
-        border-color: var(--secondary-colour, $yellow);
-    }
-}
-
-.btn {
-    font-weight: bold
-}
-
-.desktop-nav {
-    @include media-breakpoint-down(md) {
-        display: none;
-    }
-
-    .nav-logo {
-        max-height: 10rem;
-    }
-
-    a {
-        font-size: 1.125rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 0 1rem;
-        color: $yiq-text-dark;
-        letter-spacing: 0.8px;
-
-        &:hover, &:active {
-            text-decoration: none;
-            box-shadow: inset 0px -4px 0px #6dcff6
-        }
-    }
-}
-
-.underline {
-    font-size: 1.125rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0 1rem;
-    color: $yiq-text-dark;
-    letter-spacing: 0.8px;
-
-    box-shadow: inset 0px -4px 0px #6dcff6;
-
-    &:hover, &:active {
-        text-decoration: none;
-    }
-}
-.mobile-nav {
-    @include media-breakpoint-up(lg) {
-        display: none;
-    }
-
-}
-
 .home {
     p, a { font-size: 1.5rem }
 
@@ -103,6 +9,13 @@ body {
 
     h1 {
         font-size: 4rem
+    }
+    
+    @include media-breakpoint-down(md) {
+        h1 {
+            font-size: 3rem;
+            text-align: center
+        }
     }
 
 
