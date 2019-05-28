@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>It's a wrap gift boxes</title>
+    {{ $css := resources.Get "dist/main.css" | fingerprint }}
+    <link rel="stylesheet" href="{{$css.RelPermalink}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+<body>
+    <div>
+        <nav class="container">
+            <div class="desktop-nav">
+                <div class="col-12 d-flex align-items-center justify-content-around">
+                    <div>
+                        <a href="/">Home</a>
+                        <a href="/about/">About</a>
+                        <a href="/gallery/">Gallery</a>
+                    </div>
+                    <img src="/images/wrap-logo.svg" alt="It's A Wrap" class="nav-logo">
+                    <div>
+                        <a href="/faq/">FAQ</a>
+                        <a href="/contact/">Contact</a>
+                        <a href="/order/">Order Now</a>
+                    </div>
+            </div>
+            </div>
+            <div class="mobile-nav">
+
+            </div>
+        </nav>
+        {{ block "main" . }} {{ end }}
+        <footer>
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-sm-6">
+                        <p>© 2019 It’s a Wrap Gift Baskets, LLC.</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social">
+                            <a href="">Facebook</a>
+                            <a href="">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {{ $js := resources.Get "dist/main.js" | fingerprint }}
+        {{ $vendor := resources.Get "dist/vendors~main.js" | fingerprint }}
+        <script src="{{$js.RelPermalink}}"></script>
+        <script src="{{$vendor.RelPermalink}}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    </div>
+</body>
+</html>
