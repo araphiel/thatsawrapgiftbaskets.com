@@ -11,42 +11,14 @@
 </head>
 <body>
     <div>
-        <nav class="container">
-            <div class="desktop-nav">
-                <div class="col-12 d-flex align-items-center justify-content-around">
-                    <div>
-                        <a href="/">Home</a>
-                        <a href="/about/">About</a>
-                        <a href="/gallery/">Gallery</a>
-                    </div>
-                    <img src="/images/wrap-logo.svg" alt="It's A Wrap" class="nav-logo">
-                    <div>
-                        <a href="/faq/">FAQ</a>
-                        <a href="/contact/">Contact</a>
-                        <a href="/order/">Order Now</a>
-                    </div>
-            </div>
-            </div>
-            <div class="mobile-nav">
+        {{ partial "nav/site-nav.html" . }}
+        
+        {{ block "main" . }}
+        
+        {{ end }}
+        
+        {{ partial "footer/site-footer.html" . }}
 
-            </div>
-        </nav>
-        {{ block "main" . }} {{ end }}
-        <footer>
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-sm-6">
-                        <p>© 2019 It’s a Wrap Gift Baskets, LLC.</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="social">
-                            <a href="">Facebook</a>
-                            <a href="">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         {{ $js := resources.Get "dist/main.js" | fingerprint }}
         {{ $vendor := resources.Get "dist/vendors~main.js" | fingerprint }}
         <script src="{{$js.RelPermalink}}"></script>
