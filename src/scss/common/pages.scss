@@ -3,6 +3,7 @@
 
     h2 { font-size: 3rem }
 }
+
 .hero-section {
     padding: 4rem 0;
     margin-top: 2rem;
@@ -32,12 +33,6 @@
         background: var(--pink);
     }
 
-    .hero-ctas {
-        @include media-breakpoint-down(md) {
-            
-        }
-    }
-
 }
 
 .general {
@@ -49,8 +44,14 @@
         
         display: block;
         max-width: 100%;
-
+        
         position: relative;
+        
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            float: none !important;
+            margin: 0 auto;
+        }
     }
 
     .bg-block-bg {
