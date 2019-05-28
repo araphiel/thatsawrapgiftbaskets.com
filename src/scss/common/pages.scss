@@ -135,17 +135,15 @@ footer {
 
 .hcta {
     margin-top: 2rem;
+    
+    display: flex;
+    justify-content: center;
 
     @include media-breakpoint-up(md) {
-        display: flex;
         flex-flow: row;
-        justify-content: left
-
     }
     @include media-breakpoint-down(md) {
-        display: flex;
         flex-flow: column;
-        justify-content: center;
         text-align: center;
     }
 
