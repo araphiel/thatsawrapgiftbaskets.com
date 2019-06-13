@@ -9,7 +9,7 @@ html {
     @include media-breakpoint-up(sm) {
         font-size: 0.925rem;
     }
-      
+
     @include media-breakpoint-up(md) {
         font-size: 0.95rem;
     }
@@ -39,7 +39,9 @@ body {
     }
 }
 
-.btn { font-weight: 600 }
+.btn {
+    font-weight: 600
+}
 
 .underline {
     font-size: 1.125rem;
@@ -51,7 +53,8 @@ body {
 
     box-shadow: inset 0px -4px 0px #6dcff6;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
         text-decoration: none;
     }
 }
@@ -65,8 +68,9 @@ body {
         margin: 0 1rem;
         color: $yiq-text-dark;
         letter-spacing: 0.8px;
-    
-        &:hover, &:active {
+
+        &:hover,
+        &:active {
             text-decoration: none;
             box-shadow: inset 0px -4px 0px #6dcff6
         }
@@ -76,18 +80,18 @@ body {
         @include media-breakpoint-down(md) {
             display: none;
         }
-    
+
         .nav-logo {
             max-height: 10rem;
         }
-    
+
     }
 
     .mobile {
         @include media-breakpoint-up(lg) {
             display: none;
         }
-        
+
         .nav-logo {
             max-height: 5rem;
             margin: 1rem;
@@ -105,6 +109,7 @@ footer {
 
     p {
         font-size: 0.75rem;
+
         @include media-breakpoint-down(md) {
             text-align: center;
         }
@@ -113,7 +118,7 @@ footer {
     .social {
         display: flex;
         justify-content: end;
-        
+
         @include media-breakpoint-down(md) {
             justify-content: center;
         }
@@ -129,20 +134,32 @@ footer {
     display: inline-block;
     position: relative;
     width: 20px;
-    height: 8px; }
-    .burger:before, .burger:after {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 2px;
-      transition: transform .3s ease-in-out, background .3s ease-in-out;
-      background: currentColor; }
-    .burger:before {
-      margin-bottom: 4px; }
-    .burger.rotated {
-      bottom: 3px; }
-      .burger.rotated:before {
-        transform: translate(1px, 6px) rotate(-45deg); }
-      .burger.rotated:after {
-        transform: translate(1px, 0) rotate(45deg); }
-  
+    height: 8px;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        transition: transform .3s ease-in-out, background .3s ease-in-out;
+        background: currentColor;
+    }
+
+    &:before {
+        margin-bottom: 4px;
+    }
+
+    &.rotated {
+        bottom: 3px;
+
+        &:before {
+            transform: translate(1px, 6px) rotate(-45deg);
+        }
+
+        &:after {
+            transform: translate(1px, 0) rotate(45deg);
+        }
+    }
+
+}
