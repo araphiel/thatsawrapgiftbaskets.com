@@ -1,3 +1,8 @@
-baseURL = "httsp://www.thatsawrapgiftbaskets.com/"
+baseURL = "httsp://www.thatsawrapandmore.com/"
 languageCode = "en-us"
 title = "It's A Wrap Gift Baskets"
+
+[params]
+
+contactEmail = "info@thatsawrapandmore.com"
+phoneNumber = "469-476-2456"
