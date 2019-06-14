@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>That's A Wrap Gift Baskets</title>
     {{ $css := resources.Get "dist/main.css" | fingerprint }}
+    <link rel="preload" href="{{$css.RelPermalink}}" as="style">    
     <link rel="stylesheet" href="{{$css.RelPermalink}}">    
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" /> -->
     <link rel="preload" as="font" href="/fonts/avenir-next-regular.woff2" type="font/woff2" crossorigin="anonymous">
