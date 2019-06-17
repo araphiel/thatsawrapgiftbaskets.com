@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/uploads
+  label: Uploads
+  create: documents
+  match: "**/*"
+- type: directory
   path: content
   label: Pages
   create: all
