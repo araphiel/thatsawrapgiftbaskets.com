@@ -1,0 +1,25 @@
+---
+pages:
+- index.md
+hide_body: false
+fields:
+- name: title
+  default: ''
+  label: Title
+  hidden: false
+  type: text
+- name: description
+  default: ''
+  label: Description
+  hidden: false
+  type: textarea
+  config:
+    wysiwyg: true
+- name: upload
+  default: ''
+  label: Gallery Upload
+  hidden: false
+  type: file
+  config:
+    maxSize: 5
+---
