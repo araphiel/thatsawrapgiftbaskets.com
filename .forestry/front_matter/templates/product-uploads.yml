@@ -1,4 +1,25 @@
 ---
 label: Product Uploads
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Product Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Product Subscription
+- name: product_image
+  type: file
+  config:
+    maxSize: 250
+  label: Product Image
