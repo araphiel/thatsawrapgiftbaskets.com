@@ -10,10 +10,12 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/uploads
-  label: Uploads
+  path: content/products
+  label: Products
   create: documents
   match: "**/*"
+  templates:
+  - product-uploads
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
