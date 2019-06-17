@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main class="home">
+    <section class="about">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="about-headline">About</h1>
+                </div>
+            </div> -->
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="about-photo.jpg" class="about-image lazy">
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        That's A Wrap was established in January 2019 by Brittney Collins, founder & owner.
+                    </p>
+                    <p>
+                        Living in the Irving Texas; I am able to share my gift with all of DFW. 
+                    </p>
+                    <p>
+                        I truly love working with my clients to make their dream & vision a reality.
+                        And remember any basket will be made with love and you in mind.
+                        We are sure to impress for any of the holidays.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="home-cta" data-color="blue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Order Today</h2>
+                    <p>Place your custom order today!</p>
+                    <div>
+                        <a class="btn btn-dark rounded-pill px-4" href="/order/">Get Started</a>
+                        <a class="btn btn-outline-dark rounded-pill px-4 ml-4"
+                            href="tel:{{ .Site.Params.phoneNumber }}">{{ .Site.Params.phoneNumber }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}
