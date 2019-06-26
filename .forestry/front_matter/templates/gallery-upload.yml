@@ -22,6 +22,7 @@ fields:
     maxSize: '5'
   label: Image
 pages:
+- content/products/crayola-wreath.md
 - content/products/snoopy.md
 - content/products/wwe-box.md
 - content/products/love-box-1.md
