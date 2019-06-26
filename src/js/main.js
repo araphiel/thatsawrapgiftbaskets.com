@@ -16,4 +16,6 @@ if (document.querySelector('.gallery')) {
     });
 
     magic.listen();
+    setTimeout(x => magic.positionItems(), 200)
+    setTimeout(x => magic.positionItems(), 1000)
 }
