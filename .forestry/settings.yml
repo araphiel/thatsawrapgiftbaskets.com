@@ -8,14 +8,6 @@ sections:
   path: content/about/_index.md
   label: About
 - type: directory
-  path: content/products
-  label: Gallery
-  create: documents
-  match: "**/*"
-  exclude: index.md
-  templates:
-  - product-uploads
-- type: directory
   path: content/questions
   label: FAQ
   create: documents
