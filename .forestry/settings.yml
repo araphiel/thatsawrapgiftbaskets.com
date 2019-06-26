@@ -21,6 +21,7 @@ sections:
   label: FAQ
   create: documents
   match: "**/*"
+  exclude: index.md
   templates:
   - faqs
 upload_dir: content/products/images
