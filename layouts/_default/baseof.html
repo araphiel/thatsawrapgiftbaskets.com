@@ -15,9 +15,9 @@
 </head>
 <body>
     <div>
-        {{ partialCached "nav/site-nav.html" . }}
+        {{ partial "nav/site-nav.html" . }}
         {{ block "main" . }}{{ end }}
-        {{ partialCached "footer/site-footer.html" . }}
+        {{ partial "footer/site-footer.html" . }}
     </div>
     {{ $js := resources.Get "dist/main.js" | fingerprint }}
     {{ $vendor := resources.Get "dist/vendors~main.js" | fingerprint }}
