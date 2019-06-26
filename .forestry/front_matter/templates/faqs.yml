@@ -18,6 +18,7 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
+- content/questions/what-payments-do-you-accept.md
 - content/questions/are-deposits-refundable.md
 - content/questions/how-long-does-your-service-take.md
 - content/questions/do-your-services-require-a-deposit.md
