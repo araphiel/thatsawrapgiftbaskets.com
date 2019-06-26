@@ -21,6 +21,8 @@ sections:
   label: FAQ
   create: documents
   match: "**/*"
+  templates:
+  - faqs
 upload_dir: content/products/images
 public_path: "/products/images"
 front_matter_path: ''
