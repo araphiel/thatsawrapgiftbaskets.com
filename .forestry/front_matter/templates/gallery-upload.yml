@@ -22,5 +22,6 @@ fields:
     maxSize: '5'
   label: Image
 pages:
+- content/products/example-3.md
 - content/products/example-image-2.md
 - content/products/example-image-1.md
