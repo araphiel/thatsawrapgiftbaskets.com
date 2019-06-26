@@ -23,8 +23,8 @@ sections:
   exclude: index.md
   templates:
   - faqs
-upload_dir: ''
-public_path: " https://res.cloudinary.com/dx6vch6h7/ITW/uploads"
+upload_dir: ITW
+public_path: " https://res.cloudinary.com/dx6vch6h7/image/upload"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
