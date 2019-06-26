@@ -23,10 +23,10 @@ sections:
   exclude: index.md
   templates:
   - faqs
-upload_dir: content/products/images
-public_path: "/products/images"
+upload_dir: ITW/uploads
+public_path: " https://res.cloudinary.com/dx6vch6h7/ITW/uploads"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
