@@ -239,10 +239,6 @@
     margin-top: -1.75rem
 }
 
-.accordion+.accordion .accordion-title {
-    padding-top: 1.125rem
-}
-
 .accordion:last-child {
     margin-bottom: 0
 }
@@ -283,7 +279,7 @@
 
 .accordion-title {
     display: block;
-    padding: 0.6875rem 2.25rem 0.6875rem 0
+    padding: 1.125rem 2.25rem 1.125rem 0rem
 }
 
 .accordion-title:hover {
