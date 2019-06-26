@@ -1,7 +1,13 @@
 .home {
-    p, a { font-size: 1.5rem }
 
-    h2 { font-size: 3rem }
+    p,
+    a {
+        font-size: 1.5rem
+    }
+
+    h2 {
+        font-size: 3rem
+    }
 }
 
 .hero-section {
@@ -13,7 +19,7 @@
     h1 {
         font-size: 4rem
     }
-    
+
     @include media-breakpoint-down(md) {
         h1 {
             font-size: 3rem;
@@ -28,8 +34,8 @@
             display: flex;
             flex-flow: row;
             justify-content: left
-
         }
+
         @include media-breakpoint-down(md) {
             display: flex;
             flex-flow: column;
@@ -52,7 +58,7 @@
     .hero-block-bg {
         width: 100%;
         height: calc(100% + 5rem);
-        
+
         position: absolute;
         top: -10%;
         right: -25%;
@@ -68,12 +74,12 @@
     .bg-block-image {
         width: 78%;
         float: right;
-        
+
         display: block;
         max-width: 100%;
-        
+
         position: relative;
-        
+
         @include media-breakpoint-down(md) {
             width: 100%;
             float: none !important;
@@ -84,21 +90,21 @@
     .bg-block-bg {
         width: 86%;
         height: 100%;
-        
+
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        
+
         background: var(--yellow);
     }
 }
 
 .services {
     padding: 4rem 0;
-    
+
     img {
-        padding-bottom: 2rem 
+        padding-bottom: 2rem
     }
 
     .block-card {
@@ -111,10 +117,11 @@
 
 .home-gallery {
     padding: 4rem 0;
-    
+
     .gallery-small {
         width: 48%;
     }
+
     .gallery-large {
         width: 100%
     }
@@ -122,23 +129,24 @@
 
 .home-cta {
     padding: 4rem 0;
-    background-color: var(--secondary-colour, $yellow)  
+    background-color: var(--secondary-colour, $yellow)
 }
 
 .hcta {
     margin-top: 2rem;
-    
+
     display: flex;
     justify-content: center;
 
     @include media-breakpoint-up(md) {
         flex-flow: row;
-        
+
         &--item {
             margin-left: 1rem;
             margin-right: 1rem;
         }
     }
+
     @include media-breakpoint-down(md) {
         flex-flow: column;
         text-align: center;
@@ -170,4 +178,114 @@
         font-weight: 300;
         margin-bottom: 2rem
     }
+}
+
+.accordion {
+    border: 0.0625rem solid $red;
+    border-width: 0.0625rem 0;
+    display: block;
+    margin-bottom: 2rem;
+    position: relative
+}
+
+.accordion:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23394EFF' d='M11.125,12.875H4c-0.4832492,0-0.875-0.3917513-0.875-0.875S3.5167508,11.125,4,11.125h7.125V4 c0-0.4832492,0.3917513-0.875,0.875-0.875S12.875,3.5167508,12.875,4v7.125H20c0.4832497,0,0.875,0.3917513,0.875,0.875 S20.4832497,12.875,20,12.875h-7.125V20c0,0.4832497-0.3917513,0.875-0.875,0.875S11.125,20.4832497,11.125,20V12.875z'/%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: ' ';
+    display: block;
+    font-size: 0.0625rem;
+    font-weight: 600;
+    height: 1.75rem;
+    line-height: 0.0625rem;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 1rem;
+    transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform-origin: 50% 50% 0;
+    -ms-transform-origin: 50% 50%;
+    transition-delay: 0ms;
+    transition-duration: 180ms;
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in-out;
+    width: 1.75rem
+}
+
+.accordion:focus {
+    outline: none
+}
+
+.accordion.accordion-expanded:before {
+    transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transition-duration: 180ms
+}
+
+.accordion.accordion-expanded .accordion-content {
+    max-height: 120em;
+    overflow: visible
+}
+
+.accordion.accordion-collapsing {
+    overflow: hidden
+}
+
+.accordion+.accordion {
+    border-top-width: 0;
+    margin-top: -1.75rem
+}
+
+.accordion+.accordion .accordion-title {
+    padding-top: 1.125rem
+}
+
+.accordion:last-child {
+    margin-bottom: 0
+}
+
+.accordion-content {
+    animation-delay: 0ms;
+    animation-duration: 0ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    perspective: 100vw;
+    position: static;
+    transition-delay: 30ms;
+    transition-duration: 180ms;
+    transition-property: max-height, overflow;
+    transition-timing-function: ease-in-out
+}
+
+.accordion-content>* {
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out
+}
+
+.accordion:not(.accordion-expanded) .accordion-content>* {
+    opacity: 0
+}
+
+.accordion-expanded .accordion-content>* {
+    opacity: 1;
+    transition-delay: 60ms;
+    transition-duration: 120ms
+}
+
+.accordion-title {
+    display: block;
+    padding: 0.6875rem 2.25rem 0.6875rem 0
+}
+
+.accordion-title:hover {
+    cursor: pointer
 }
