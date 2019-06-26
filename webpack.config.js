@@ -2,7 +2,7 @@ const { resolve } = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (env, argv) => {
     return {
@@ -74,7 +74,7 @@ module.exports = (env, argv) => {
             splitChunks: {
                 chunks: 'all'
             },
-            minimizer: [new UglifyJsPlugin()]
+            // minimizer: [new UglifyJsPlugin()]
         },
         
         performance: {
