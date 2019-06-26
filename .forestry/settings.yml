@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: content/about/_index.md
+  label: About
 - type: directory
   path: content/products
   label: Gallery
@@ -12,9 +15,6 @@ sections:
   exclude: index.md
   templates:
   - gallery-upload
-- type: document
-  path: content/about/_index.md
-  label: About
 - type: directory
   path: content/questions
   label: FAQ
