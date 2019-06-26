@@ -4,11 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
+- type: document
   path: content/about
   label: About
-  create: none
-  match: _index.md
+  match: "**/*"
 - type: directory
   path: content/products
   label: Products
