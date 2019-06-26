@@ -9,11 +9,12 @@ sections:
   label: About
 - type: directory
   path: content/products
-  label: Products
+  label: Gallery
   create: documents
   match: "**/*"
+  exclude: index.md
   templates:
-  - product-uploads
+  - gallery-upload
 - type: directory
   path: content/questions
   label: FAQ
