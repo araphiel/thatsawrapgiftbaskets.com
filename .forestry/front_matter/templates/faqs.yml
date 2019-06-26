@@ -18,4 +18,5 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
+- content/questions/how-long-does-your-service-take.md
 - content/questions/do-your-services-require-a-deposit.md
