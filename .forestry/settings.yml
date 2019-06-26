@@ -16,6 +16,11 @@ sections:
   match: "**/*"
   templates:
   - product-uploads
+- type: directory
+  path: content/questions
+  label: FAQ
+  create: documents
+  match: "**/*"
 upload_dir: content/products/images
 public_path: "/products/images"
 front_matter_path: ''
