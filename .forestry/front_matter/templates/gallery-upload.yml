@@ -22,5 +22,6 @@ fields:
     maxSize: '5'
   label: Image
 pages:
+- content/products/wwe-box.md
 - content/products/love-box-1.md
 - content/products/cute-dino.md
