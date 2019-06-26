@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main>
+    <section class="faq">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 mb-5">
+                    <h1>{{.Title}}</h1>
+                </div>
+                <div id="accordion" class="col-lg-12 mb-5">
+                    {{ $headless := .Site.GetPage "/questions" }}
+                    {{ range $headless.Resources.ByType "page" }}
+                    <div class="accordion accordion-collapsing">
+                        <h3 class="accordion-title">{{ .Title }}</h3>
+                        <div class="accordion-content">
+                            <p>{{ .Content }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="home-cta" data-color="blue">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Order Today</h2>
+                    <p>Place your custom order today!</p>
+                    <div>
+                        <a class="btn btn-dark rounded-pill px-4" href="/order/">Get Started</a>
+                        <a class="btn btn-outline-dark rounded-pill px-4 ml-4"
+                            href="tel:{{ .Site.Params.phoneNumber }}">{{ .Site.Params.phoneNumber }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}
+{{ define "extra-scripts" }}
+<script>
+    var delegate = document.getElementById('accordion');
+    delegate.onclick = function (e) {
+        var t = e.target
+        if (!t.matches(".accordion-title")) return
+        t.parentElement.classList.toggle('accordion-expanded')
+    }
+</script>
+{{ end }}
