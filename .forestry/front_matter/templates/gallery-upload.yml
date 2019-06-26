@@ -21,3 +21,5 @@ fields:
   config:
     maxSize: '5'
   label: Image
+pages:
+- content/products/example-image-1.md
