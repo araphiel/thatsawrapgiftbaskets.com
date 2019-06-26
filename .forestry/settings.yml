@@ -12,6 +12,7 @@ sections:
   label: Gallery
   create: documents
   match: "**/*"
+  exclude: index.md
   templates:
   - product-uploads
 - type: directory
