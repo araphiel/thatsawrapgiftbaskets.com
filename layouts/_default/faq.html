@@ -12,7 +12,7 @@
                     <div class="accordion accordion-collapsing">
                         <h3 class="accordion-title">{{ .Title }}</h3>
                         <div class="accordion-content">
-                            <p>{{ .Content }}</p>
+                            <p>{{ .Params.Answer | markdownify }}</p>
                         </div>
                     </div>
                     {{ end }}
