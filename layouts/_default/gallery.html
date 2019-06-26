@@ -6,8 +6,8 @@
                 <div class="col-lg-12 mb-5 text-center">
                     <h1>{{.Title}}</h1>
                 </div>
-                <div class="col-lg-12 mb-5 h-100">
-                    <div id="bricks" class="mx-auto">
+                <div class="col-lg-12 mb-5">
+                    <div id="masonry">
                         {{ $headless := .Site.GetPage "/products" }}
                         {{ range $headless.Resources.ByType "page" }}
                         <div class="bricks-item">
@@ -27,42 +27,6 @@
 
 {{ define "extra-scripts" }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bricks.js/1.8.0/bricks.min.js"
-    integrity="sha256-/h69mBYIzhCn/Av84xcH3HB7dFuND11cwTYP3neiwM0=" crossorigin="anonymous"></script>
-<script>
-    const sizes = [
-        {
-            columns: 1,
-            gutter: 10
-        },
-        {
-            mq: '400px',
-            columns: 2,
-            gutter: 10
-        },
-        {
-            mq: '768px',
-            columns: 3,
-            gutter: 25
-        },
-        {
-            mq: '991px',
-            columns: 4,
-            gutter: 50
-        }
-    ]
-
-    const instance = Bricks({
-        container: '#bricks',
-        packed: 'packed',
-        sizes: sizes,
-        position: true
-    })
-
-    instance.pack()
-    instance.update()
-    instance.resize(true)
-</script>
 {{ end }}
 
 {{ define "extra-css" }}
