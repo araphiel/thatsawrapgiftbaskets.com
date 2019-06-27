@@ -7,6 +7,15 @@ import magicGrid from 'magic-grid'
 window.$ = $
 window.jQuery = $
 
+// Hamburger Bar Click Events
+const menuButton = document.querySelector('.burger');
+menuButton.onclick = function (e) {
+    this.classList.toggle('rotated')
+    document.body.classList.toggle('open')
+    document.querySelector('.mobile-menu').classList.toggle('open')
+}
+
+// Add magic grid to gallery page
 if (document.querySelector('.gallery')) {
 
     let magic = new magicGrid({
