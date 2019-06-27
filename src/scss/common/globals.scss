@@ -23,11 +23,11 @@ body {
     padding: calc(1.25rem * 1 / 1 + 0px);
 
     &.open {
-        // &::before,
-        // &::after {
-        //     border-color: transparent;
-        //     transition: border-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1)
-        // }
+        &::before,
+        &::after {
+            border-color: transparent;
+            transition: border-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1)
+        }
 
         overflow-y: hidden
     } 
