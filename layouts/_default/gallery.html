@@ -12,7 +12,7 @@
                         {{ range $headless.Resources.ByType "page" }}
                         <div class="bricks-item">
                             <a data-fancybox="gallery" href='{{ trim .Params.Image " " }}'>
-                                <img src='{{ trim .Params.Image " " }}' class="img-fluid">
+                                <img data-src='{{ trim .Params.Image " " }}' class="img-fluid lazy">
                             </a>
                             <p class="mt-4">{{- .Params.Title -}}</p>
                         </div>
