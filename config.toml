@@ -6,3 +6,4 @@ title = "It's A Wrap Gift Baskets"
 
 contactEmail = "info@thatsawrapandmore.com"
 phoneNumber = "469-476-2456"
+cloudinary_base_url = "https://res.cloudinary.com/dx6vch6h7/image/upload"
