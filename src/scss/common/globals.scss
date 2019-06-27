@@ -22,6 +22,16 @@ html {
 body {
     padding: calc(1.25rem * 1 / 1 + 0px);
 
+    &.open {
+        &::before,
+        &::after {
+            border-color: transparent;
+            transition: border-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1)
+        }
+
+        overflow-y: hidden
+    } 
+
     &::before,
     &::after {
         border: calc(1.25rem * 1 / 1 + 0px) solid transparent;
@@ -35,7 +45,8 @@ body {
         bottom: 0;
         top: 0;
         will-change: border-color;
-        border-color: var(--secondary-colour, $yellow);
+        border-color: var(--secondary-color);
+        transition: border-color 500ms cubic-bezier(1, 0, 0, 1)
     }
 }
 
@@ -64,7 +75,7 @@ body {
     .nav-item {
         font-size: 1rem;
         font-weight: 600;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin: 0 1rem;
         color: $yiq-text-dark;
         letter-spacing: 0.8px;
@@ -100,7 +111,15 @@ body {
         .logo-wrapper {
             display: flex;
             align-items: center;
-            min-width: 200px
+            min-width: 200px;
+            z-index: 222;
+        }
+        
+        .burger {
+            position: fixed;
+            top: 4.5rem;
+            right: 3.75rem;
+            z-index: 223;
         }
     }
 }
@@ -186,4 +205,45 @@ footer {
 .bricks-item {
     max-width: 200px;
     text-align: center
+}
+
+.mobile-menu {
+    opacity: 0
+}
+
+.mobile-menu.open {
+    
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        padding: 10rem 0;
+        
+        width: 100%;
+        height: 100vh;
+
+        background: var(--secondary-colour, #C4D0F5) none repeat scroll 0% 0%;
+        z-index: 22;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        
+        .nav-item {
+            font-size: 1.5rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--gray-dark);
+            
+            &:hover {
+                color: var(--dark);
+                box-shadow: none
+            }
+        }
+}
+
+.open .logo-wrapper {
+    display: none !important;
 }
