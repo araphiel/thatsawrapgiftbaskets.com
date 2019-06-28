@@ -18,6 +18,7 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
+- content/questions/note-from-the-owner.md
 - content/questions/what-are-your-delivery-pickup-terms.md
 - content/questions/shipping-handling.md
 - content/questions/do-you-cater-to-dietary-or-allergies.md
