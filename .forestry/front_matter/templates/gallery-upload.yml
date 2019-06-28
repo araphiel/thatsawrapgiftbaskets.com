@@ -22,7 +22,6 @@ fields:
     maxSize: '5'
   label: Image
 pages:
-- content/products/test.md
 - content/products/who-dat-basket.md
 - content/products/minnie-mouse.md
 - content/products/here-comes-the-bride.md
