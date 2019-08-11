@@ -18,6 +18,7 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
+- content/questions/booking-information-1.md
 - content/questions/am-i-allowed-to-edit-or-make-changes-to-my-order-once-placed.md
 - content/questions/what-are-your-delivery-pickup-terms.md
 - content/questions/do-you-cater-to-dietary-or-allergies.md
