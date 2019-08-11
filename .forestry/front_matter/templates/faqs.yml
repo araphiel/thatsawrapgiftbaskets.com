@@ -18,6 +18,7 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
+- content/questions/balloon-delivery-installation.md
 - content/questions/event-cancellation-rescheduling.md
 - content/questions/shipping-handling.md
 - content/questions/booking-information-1.md
