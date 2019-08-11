@@ -23,6 +23,9 @@ fields:
   label: Image
 pages:
 - content/products/who-dat-basket.md
+- content/products/snoopy.md
+- content/products/wwe-box.md
+- content/products/love-box-1.md
 - content/products/minnie-mouse.md
 - content/products/here-comes-the-bride.md
 - content/products/thanks-a-latte.md
@@ -31,7 +34,4 @@ pages:
 - content/products/candy-bar-cake.md
 - content/products/mini-bar-in-a-jar.md
 - content/products/crayola-wreath.md
-- content/products/snoopy.md
-- content/products/wwe-box.md
-- content/products/love-box-1.md
 - content/products/cute-dino.md

@@ -18,13 +18,13 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
-- content/questions/note-from-the-owner.md
-- content/questions/what-are-your-delivery-pickup-terms.md
-- content/questions/shipping-handling.md
-- content/questions/do-you-cater-to-dietary-or-allergies.md
-- content/questions/is-there-a-charge-for-expedited-orders.md
 - content/questions/am-i-allowed-to-edit-or-make-changes-to-my-order-once-placed.md
-- content/questions/what-payments-do-you-accept.md
+- content/questions/what-are-your-delivery-pickup-terms.md
+- content/questions/do-you-cater-to-dietary-or-allergies.md
 - content/questions/are-deposits-refundable.md
 - content/questions/how-long-does-your-service-take.md
 - content/questions/do-your-services-require-a-deposit.md
+- content/questions/note-from-the-owner.md
+- content/questions/shipping-handling.md
+- content/questions/is-there-a-charge-for-expedited-orders.md
+- content/questions/what-payments-do-you-accept.md
