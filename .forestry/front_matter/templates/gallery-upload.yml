@@ -22,6 +22,7 @@ fields:
     maxSize: '5'
   label: Image
 pages:
+- content/products/say-yes-bridal-favors.md
 - content/products/twinkle-twinkle-diaper-cake.md
 - content/products/have-your-cake-eat-it-too.md
 - content/questions/booking-information.md
