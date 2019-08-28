@@ -22,6 +22,7 @@ fields:
     maxSize: '5'
   label: Image
 pages:
+- content/products/bridesmaid-box.md
 - content/products/girl-boss-basket.md
 - content/products/mini-bar-in-a-jar.md
 - content/products/here-comes-the-bride.md
