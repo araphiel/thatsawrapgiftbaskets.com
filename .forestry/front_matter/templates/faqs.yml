@@ -18,13 +18,13 @@ fields:
   label: Answer
   description: Enter the FAQ solution here.
 pages:
-- content/questions/what-are-your-delivery-pickup-terms.md
-- content/questions/outdoor-events.md
-- content/questions/event-removal.md
-- content/questions/balloon-delivery-installation.md
-- content/questions/event-cancellation-rescheduling.md
-- content/questions/shipping-handling.md
 - content/questions/booking-information-1.md
+- content/questions/event-cancellation-rescheduling.md
+- content/questions/balloon-delivery-installation.md
+- content/questions/event-removal.md
+- content/questions/outdoor-events.md
+- content/questions/what-are-your-delivery-pickup-terms.md
+- content/questions/shipping-handling.md
 - content/questions/am-i-allowed-to-edit-or-make-changes-to-my-order-once-placed.md
 - content/questions/do-you-cater-to-dietary-or-allergies.md
 - content/questions/are-deposits-refundable.md

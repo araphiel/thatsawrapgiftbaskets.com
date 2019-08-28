@@ -22,11 +22,12 @@ fields:
     maxSize: '5'
   label: Image
 pages:
-- content/products/no-prob-llama-diaper-motorcycle.md
-- content/products/say-yes-bridal-favors.md
-- content/products/twinkle-twinkle-diaper-cake.md
-- content/products/have-your-cake-eat-it-too.md
+- content/products/candy-bar-cake.md
 - content/questions/booking-information.md
+- content/products/have-your-cake-eat-it-too.md
+- content/products/twinkle-twinkle-diaper-cake.md
+- content/products/say-yes-bridal-favors.md
+- content/products/no-prob-llama-diaper-motorcycle.md
 - content/products/who-dat-basket.md
 - content/products/snoopy.md
 - content/products/wwe-box.md
@@ -36,7 +37,6 @@ pages:
 - content/products/thanks-a-latte.md
 - content/products/girl-boss-basket.md
 - content/products/bridesmaid-box.md
-- content/products/candy-bar-cake.md
 - content/products/mini-bar-in-a-jar.md
 - content/products/crayola-wreath.md
 - content/products/cute-dino.md
