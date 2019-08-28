@@ -247,3 +247,12 @@ footer {
 .open .logo-wrapper {
     display: none !important;
 }
+
+.col-divider {
+    @include media-breakpoint-up(lg) {
+        border-right: 1px solid #e3e3e3;
+    }
+    @include media-breakpoint-down(md) {
+        border-bottom: 1px solid #e3e3e3;
+    }
+}
