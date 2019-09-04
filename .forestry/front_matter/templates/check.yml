@@ -1,0 +1,10 @@
+---
+label: Check
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: images
+  label: images
