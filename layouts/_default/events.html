@@ -1,50 +1,62 @@
 {{ define "main" }}
-<main class="gallery">
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 mb-5">
-                    <h1>Events & Parties</h1>
-                    <p>Thats a wrap is here to bring any of your party ideas
-                        or inspirations to life.</p>
+    <main class="gallery">
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <h1>Events & Parties</h1>
+                        <p>Thats a wrap is here to bring any of your party ideas or inspirations to life.</p>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Schedule a consultation</h4>
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/thatsawrap/15min" style="height: 80vh"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <img class="lazy img-fluid mr-4" style="max-height: 10rem; min-width: 10rem" data-src="/images/events/treat-tables.jpg">
+                            <div>
+                                <h4 class="">Treat Tables</h4>
+                                <p>Treat tables can be created for baby showers, birthdays or weddings. Let us create a sweet table for the sweetest day of your life! Checkout how we created beautiful dessert tables for some of our clients.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <img class="lazy img-fluid mr-4" style="max-height: 10rem; min-width: 10rem" data-src="/images/events/ballon-decor.jpg">
+                            <div>
+                                <h4 class="">Ballon Decor</h4>
+                                <p>Celebrate any special occasion with balloon décor. Transform your party venue with our balloon columns, garlands, or walls.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <img class="lazy img-fluid mr-4" style="max-height: 10rem; min-width: 10rem" data-src="/images/events/party-favors.jpg">
+                            <div>
+                                <h4 class="">Party Favors</h4>
+                                <p>Whether its for your birthday, graduation, or showers. We are here for all your party favor needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Pricing</h2>
+                        <p>Ballon Column | 1 / $50</p>
+                        <p>Ballon Columns | 2 / $500</p>
+                        <p>Ballon Wall | $200 & up</p>
+                        <p>Ballon Garland | $100</p>
+                        <p>Ballon Centerpieces | $20+</p>
+                        <p>Ballon Numbers | $65</p>
+                        <p>Treat Bags | 12/$100</p>
+                        <p>Event Table Setup | By Quote</p>
+                        <p>All events are given a quote.</p>
+                        <p>Delivery & Installation Free will be added to all orders that require setup</p>
+                    </div>
+                </div> -->
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Schedule a consultation</h4>
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/thatsawrap/15min"
-                        style="height: 80vh">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex mb-4">
-                        <img class="lazy img-fluid mr-4" style="max-height: 10rem"
-                            data-src="/images/events/treat-tables.jpg">
-                        <div>
-                            <h4 class="">Treat Tables</h4>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4">
-                        <img class="lazy img-fluid mr-4" style="max-height: 10rem"
-                            data-src="/images/events/ballon-decor.jpg">
-                        <div>
-                            <h4 class="">Ballon Decor</h4>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4">
-                        <img class="lazy img-fluid mr-4" style="max-height: 10rem"
-                            data-src="/images/events/party-favors.jpg">
-                        <div>
-                            <h4 class="">Party Favors</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 {{ end }}
 
 {{ define "extra-scripts" }}
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 {{ end }}
