@@ -1,6 +1,6 @@
 ---
 layout: about
-
+images: about-photo.jpg
 ---
 That's A Wrap And More was established in January 2019 by Brittney Collins, founder & owner.
 
