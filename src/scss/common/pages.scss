@@ -129,7 +129,11 @@
 
 .home-cta {
     padding: 4rem 0;
-    background-color: var(--secondary-color, $yellow)
+    background-color: var(--secondary-color, $yellow);
+
+    a, button {
+        font-size: 1.25rem 
+    }
 }
 
 .hcta {
@@ -142,7 +146,6 @@
         flex-flow: row;
 
         &--item {
-            margin-left: 1rem;
             margin-right: 1rem;
         }
     }
