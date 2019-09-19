@@ -1,5 +1,5 @@
 ---
-title: Events
+title: Events & Parties
 layout: events
 services:
 - Service: Treat Tables
@@ -29,3 +29,5 @@ price_list:
   price: 12 for $100
 
 ---
+
+We are here to bring any of your party ideas or inspirations to life.
