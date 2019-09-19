@@ -4,12 +4,16 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Pages
+- type: document
+  path: content/about/_index.md
+  label: About Page
 - type: document
   path: content/events/index.md
   label: Events Page
-- type: document
-  path: content/about/_index.md
-  label: About
+- type: heading
+  label: Directories
 - type: directory
   path: content/products
   label: Gallery
@@ -26,6 +30,12 @@ sections:
   exclude: index.md
   templates:
   - faqs
+- type: heading
+  label: Admin
+- type: document
+  path: config.toml
+  label: Site Settings
+  match: "**/*"
 upload_dir: ITW
 public_path: " https://res.cloudinary.com/dx6vch6h7/image/upload"
 front_matter_path: ''
