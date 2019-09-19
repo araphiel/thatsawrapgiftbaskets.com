@@ -12,6 +12,8 @@ sections:
 - type: document
   path: content/events/index.md
   label: Events Page
+- type: heading
+  label: Directories
 - type: directory
   path: content/products
   label: Gallery
