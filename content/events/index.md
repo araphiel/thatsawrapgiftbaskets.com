@@ -23,7 +23,7 @@ price_list:
   price: "$100"
 - product_name: Balloon Centerpieces
   price: "$20+"
-- product_name: Ballon Number
+- product_name: Balloon Number
   price: "$60 per number"
 - product_name: Treat Bags
   price: 12 for $100
