@@ -2,6 +2,9 @@
 title: Events & Parties
 layout: events
 services:
+- Service: Balloon Decor
+  service_description: Transform your party venue with our balloon columns or garlands.
+  image: "/v1568910792/ITW/icecream_cone_kbmnfi.jpg"
 - Service: Balloon Numbers
   service_description: Custom Numbers filled with balloons of your choice and color
     scheme.
