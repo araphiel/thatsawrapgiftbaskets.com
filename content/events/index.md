@@ -17,7 +17,7 @@ services:
 price_list:
 - product_name: Balloon Column
   price: "$50 per column"
-- product_name: Ballon Wall
+- product_name: Balloon Wall
   price: "$200+"
 - product_name: Ballon Garland (Standard)
   price: "$100"
