@@ -1,6 +1,7 @@
 ---
 title: Events & Parties
 layout: events
+menu: "main"
 services:
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
