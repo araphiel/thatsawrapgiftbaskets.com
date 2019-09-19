@@ -5,7 +5,6 @@
       <div class="row">
         <div class="col-lg-12 mb-5">
           <h1>{{ .Title }}</h1>
-          <!-- <hr> -->
         </div>
       </div>
       <div class="row justify-content-between">
@@ -42,7 +41,7 @@
 
           <div class="mb-5">
             <h6>Schedule a consultation</h6>
-            <p class="mb-0">Schedule a consultation to create your perfect gift basket or event. <a class="bold" href="/events">Get started</a></p>
+            <p class="mb-0">Schedule a consultation to create your perfect gift basket or event. <button class="btn btn-link p-0" data-toggle="modal" data-target="#ctaModal">Get started</button></p>
           </div>
 
           <div>
@@ -53,6 +52,9 @@
       </div>
     </div>
   </section>
+
+  {{ partial "cta-modal.html" . }}
+  
 </main>
 {{ end }}
 
