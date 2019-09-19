@@ -34,5 +34,23 @@ fields:
     max: 
     labelField: 
   label: Services
+- name: price_list
+  type: field_group_list
+  fields:
+  - name: product_name
+    type: text
+    config:
+      required: false
+    label: Product Name
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Price List
 pages:
 - content/events/index.md
