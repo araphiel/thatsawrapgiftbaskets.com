@@ -15,17 +15,17 @@ services:
     here for all your party favor needs.
   image: "/v1568875972/ITW/party-favors_dn3ybi.jpg"
 price_list:
-- product_name: Treat Bags
-  price: 12 for $100
-- product_name: Ballon Number
-  price: "$60 per number"
-- product_name: Ballon Centerpieces
-  price: "$20+"
-- product_name: Ballon Garland (Standard)
-  price: "$100"
 - product_name: Ballon Column
   price: "$50 each"
 - product_name: Ballon Wall
   price: "$200+"
+- product_name: Ballon Garland (Standard)
+  price: "$100"
+- product_name: Ballon Centerpieces
+  price: "$20+"
+- product_name: Ballon Number
+  price: "$60 per number"
+- product_name: Treat Bags
+  price: 12 for $100
 
 ---
