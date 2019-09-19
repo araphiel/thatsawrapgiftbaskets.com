@@ -1,37 +1,58 @@
 {{ define "main" }}
-    <main class="gallery">
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mb-5 text-center">
-                        <h1>Events & Parties</h1>
-                        <p>Thats a wrap is here to bring any of your party ideas or inspirations to life.</p>
-                    </div>
+<main class="gallery">
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-5 text-center">
+                    <h1>Events & Parties</h1>
+                    <p>Thats a wrap is here to bring any of your party ideas or inspirations to life.</p>
                 </div>
-                <div class="row">
-                    {{ range .Params.services }}
-                        <div class="col text-center mb-4">
-                            <img class="lazy img-fluid d-block mx-auto" style="max-height: 15rem; min-width: 15rem" data-src="{{ $.Site.Params.cloudinary_base_url }}{{ .image }}">
-                            <div class="mt-3">
-                                <h4>{{ .Service }}</h4>
-                                <p>{{ .service_description }}</p>
-                            </div>
-                        </div>
-                    {{ end }}
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Schedule a consultation</h4>
-                        <div class="calendly-inline-widget" data-url="https://calendly.com/thatsawrap/15min" style="height: 80vh"></div>
-                    </div>
-                    <div class="col-md-6"></div>
-                </div>
-                <!-- <div class="row"> <div class="col-sm-12"> <h2>Pricing</h2> <p>Ballon Column | 1 / $50</p> <p>Ballon Columns | 2 / $500</p> <p>Ballon Wall | $200 & up</p> <p>Ballon Garland | $100</p> <p>Ballon Centerpieces | $20+</p> <p>Ballon Numbers | $65</p> <p>Treat Bags | 12/$100</p> <p>Event Table Setup | By Quote</p> <p>All events are given a quote.</p> <p>Delivery & Installation Free will be added to all orders that require setup</p> </div> </div> -->
             </div>
-        </section>
-    </main>
+            <div class="row">
+                {{ range .Params.services }}
+                <div class="col text-center mb-4">
+                    <img class="lazy img-fluid d-block mx-auto" style="max-height: 15rem; min-width: 15rem"
+                        data-src="{{ $.Site.Params.cloudinary_base_url }}{{ .image }}">
+                    <div class="mt-3">
+                        <h4>{{ .Service }}</h4>
+                        <p>{{ .service_description }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center my-5">Pricing</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {{ range .Params.price_list }}
+                          <tr>
+                            <th>{{ .product_name }}</th>
+                            <td>{{ .price }}</td>
+                          </tr>
+                        {{ end }}
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Schedule a consultation</h2>
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/thatsawrap/15min"
+                        style="height: 80vh"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 {{ end }}
 
 {{ define "extra-scripts" }}
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 {{ end }}
