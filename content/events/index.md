@@ -4,8 +4,7 @@ layout: events
 services:
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
-    weddings. Let us create a sweet table for the sweetest day of your life! Checkout
-    how we created beautiful dessert tables for some of our clients.
+    weddings. Let us create a sweet table for the sweetest day of your life!
   image: "/v1568875893/ITW/treat-tables_updlbs.jpg"
 - Service: Ballon Decor
   service_description: Celebrate any special occasion with balloon décor. Transform
