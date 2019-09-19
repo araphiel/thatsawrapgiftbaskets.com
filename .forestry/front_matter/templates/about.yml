@@ -5,3 +5,5 @@ fields:
 - type: file
   name: images
   label: images
+pages:
+- content/about/_index.md
