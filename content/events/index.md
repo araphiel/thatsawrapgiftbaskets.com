@@ -5,7 +5,7 @@ services:
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
     weddings. Let us create a sweet table for the sweetest day of your life!
-  image: "/v1568875893/ITW/treat-tables_updlbs.jpg"
+  image: "/v1567629129/ITW/86810291-D9F0-4218-8F56-E6C52EE9727C_g2jyar.jpg"
 - Service: Balloon Decor
   service_description: Celebrate any special occasion with balloon décor. Transform
     your party venue with our balloon columns, garlands, or walls.
