@@ -9,7 +9,7 @@ services:
 - Service: Balloon Decor
   service_description: Celebrate any special occasion with balloon décor. Transform
     your party venue with our balloon columns, garlands, or walls.
-  image: "/v1568875933/ITW/ballon-decor_ldiz4m.jpg"
+  image: "/v1567084183/ITW/balloon_wall_olvfli.jpg"
 - Service: Party Favors
   service_description: Whether its for your birthday, graduation, or showers. We are
     here for all your party favor needs.
