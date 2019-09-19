@@ -2,6 +2,10 @@
 title: Events & Parties
 layout: events
 services:
+- Service: Balloon Numbers
+  service_description: Custom Numbers filled with balloons of your choice and color
+    scheme.
+  image: "/v1567083969/ITW/number_one_balloon_mosaic_orrxho.jpg"
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
     weddings. Let us create a sweet table for the sweetest day of your life!
