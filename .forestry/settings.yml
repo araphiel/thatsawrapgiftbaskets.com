@@ -30,6 +30,12 @@ sections:
   exclude: index.md
   templates:
   - faqs
+- type: heading
+  label: Admin
+- type: document
+  path: config.toml
+  label: Site Settings
+  match: "**/*"
 upload_dir: ITW
 public_path: " https://res.cloudinary.com/dx6vch6h7/image/upload"
 front_matter_path: ''
