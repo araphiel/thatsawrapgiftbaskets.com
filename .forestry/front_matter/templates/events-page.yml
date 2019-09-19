@@ -34,3 +34,5 @@ fields:
     max: 
     labelField: 
   label: Services
+pages:
+- content/events/index.md
