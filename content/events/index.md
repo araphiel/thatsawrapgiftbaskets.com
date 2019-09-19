@@ -16,7 +16,7 @@ services:
   image: "/v1568875972/ITW/party-favors_dn3ybi.jpg"
 price_list:
 - product_name: Ballon Column
-  price: "$50 each"
+  price: "$50 per column"
 - product_name: Ballon Wall
   price: "$200+"
 - product_name: Ballon Garland (Standard)
