@@ -1,7 +1,6 @@
 ---
 title: Events & Parties
 layout: events
-menu: "main"
 services:
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
@@ -16,7 +15,7 @@ services:
     here for all your party favor needs.
   image: "/v1568875972/ITW/party-favors_dn3ybi.jpg"
 price_list:
-- product_name: Ballon Column
+- product_name: Balloon Column
   price: "$50 per column"
 - product_name: Ballon Wall
   price: "$200+"
@@ -28,7 +27,8 @@ price_list:
   price: "$60 per number"
 - product_name: Treat Bags
   price: 12 for $100
+menu:
+  main: {}
 
 ---
-
 We are here to bring any of your party ideas or inspirations to life.
