@@ -16,9 +16,13 @@ fields:
       required: false
     label: Service
   - name: service_description
-    type: text
+    type: textarea
+    default: ''
     config:
       required: false
+      wysiwyg: false
+      schema:
+        format: markdown
     label: Service Description
   - name: image
     type: file
