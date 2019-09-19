@@ -13,7 +13,7 @@ services:
 - Service: Party Favors
   service_description: Whether its for your birthday, graduation, or showers. We are
     here for all your party favor needs.
-  image: "/v1568875972/ITW/party-favors_dn3ybi.jpg"
+  image: "/v1567084082/ITW/donut_grow_up_party_favors_drvgqz.jpg"
 price_list:
 - product_name: Balloon Column
   price: "$50 per column"
