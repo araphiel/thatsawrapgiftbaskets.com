@@ -4,12 +4,14 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Pages
+- type: document
+  path: content/about/_index.md
+  label: About Page
 - type: document
   path: content/events/index.md
   label: Events Page
-- type: document
-  path: content/about/_index.md
-  label: About
 - type: directory
   path: content/products
   label: Gallery
