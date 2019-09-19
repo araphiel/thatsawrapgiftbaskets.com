@@ -2,9 +2,31 @@
 label: Events
 hide_body: false
 fields:
-- type: text
-  name: layout
-  label: layout
-- type: file
-  name: images
-  label: images
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: services
+  type: field_group_list
+  fields:
+  - name: Service
+    type: text
+    config:
+      required: false
+    label: Service
+  - name: service_description
+    type: text
+    config:
+      required: false
+    label: Service Description
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Services
