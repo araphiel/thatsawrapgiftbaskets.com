@@ -12,7 +12,7 @@ services:
 - Service: Treat Tables
   service_description: Treat tables can be created for baby showers, birthdays or
     weddings. Let us create a sweet table for the sweetest day of your life!
-  image: "/v1567083954/ITW/dr_seuess_party_table_aecruq.jpg"
+  image: "/v1569263403/ITW/jaidenjp_dlujna.jpg"
 - Service: Balloon Wall
   service_description: Celebrate any special occasion with an organic balloon wall.
     Take your event or party to the next level.
