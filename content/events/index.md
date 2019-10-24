@@ -22,6 +22,8 @@ services:
     here for all your party favor needs.
   image: "/v1567084082/ITW/donut_grow_up_party_favors_drvgqz.jpg"
 price_list:
+- product_name: Balloon Arch
+  price: "$75"
 - product_name: Balloon Column
   price: "$50 per column"
 - product_name: Balloon Wall
