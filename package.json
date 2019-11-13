@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "start": "run-s webpack-prod hugo-prod",
-    "dev": "run-p webpack-dev hugo-dev",
+    "dev": "run-s webpack-prod dev-command",
+    "dev-command": "run-p webpack-dev hugo-dev",
     "hugo-dev": "hugo server",
     "hugo-prod": "hugo",
     "webpack-dev": "webpack --mode development --env.production=false --watch",
@@ -18,12 +19,12 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "magic-grid": "^3.2.4",
-    "popper.js": "^1.15.0",
-    "stripe": "^7.8.0"
+    "popper.js": "^1.16.0",
+    "stripe": "^7.13.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
@@ -31,11 +32,11 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "mini-css-extract-plugin": "^0.8.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.22.12",
+    "sass": "^1.23.3",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
