@@ -25,7 +25,7 @@ price_list:
 - product_name: Balloon Arch
   price: "$100"
 - product_name: Balloon Column
-  price: "$50 per column"
+  price: "$65 per column"
 - product_name: Balloon Wall
   price: "$200+"
 - product_name: Balloon Garland (Standard)
