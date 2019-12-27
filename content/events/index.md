@@ -27,7 +27,7 @@ price_list:
 - product_name: Balloon Column
   price: "$65 per column"
 - product_name: Balloon Wall
-  price: "$200+"
+  price: "$250+"
 - product_name: Balloon Garland (Standard)
   price: "$100"
 - product_name: Balloon Centerpieces
