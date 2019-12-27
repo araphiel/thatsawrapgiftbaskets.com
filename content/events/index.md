@@ -33,7 +33,7 @@ price_list:
 - product_name: Balloon Centerpieces
   price: "$30+"
 - product_name: Balloon Number
-  price: "$60 per number"
+  price: "$75 per number"
 - product_name: Treat Bags
   price: 12 for $100
 menu:
