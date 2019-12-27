@@ -29,7 +29,7 @@ price_list:
 - product_name: Balloon Wall
   price: "$250+"
 - product_name: Balloon Garland (Standard)
-  price: "$100"
+  price: "$150"
 - product_name: Balloon Centerpieces
   price: "$20+"
 - product_name: Balloon Number
