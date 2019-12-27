@@ -31,7 +31,7 @@ price_list:
 - product_name: Balloon Garland (Standard)
   price: "$150"
 - product_name: Balloon Centerpieces
-  price: "$20+"
+  price: "$30+"
 - product_name: Balloon Number
   price: "$60 per number"
 - product_name: Treat Bags
