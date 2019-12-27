@@ -35,7 +35,7 @@ price_list:
 - product_name: Balloon Number
   price: "$75 per number"
 - product_name: Treat Bags
-  price: 12 for $100
+  price: 12 for $125
 menu:
   main: {}
 
