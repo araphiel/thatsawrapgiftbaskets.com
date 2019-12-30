@@ -1,63 +1,141 @@
 {{ define "main" }}
-<main class="gallery">
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mb-5">
-          <h1>{{ .Title }}</h1>
-        </div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col-lg-7 pr-5 pb-5 mb-5 col-divider">
-          <div class="mb-3">
-            <h4>We'll follow up</h4>
+  <main class="gallery">
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-5">
+            <h1>{{ .Title }}</h1>
           </div>
-
-          <form name="Contact Form" method="POST" netlify>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <label>Name</label>
-                <input name="name" type="text" class="form-control" placeholder="Full Name">
-              </div>
-              <div class="form-group col-md-12">
-                <label>Email</label>
-                <input name="email" type="text" class="form-control" placeholder="Email Address">
-              </div>
-              <div class="form-group col-md-12">
-                <label>Message</label>
-                <textarea name="message" type="text" class="form-control" placeholder="How can we assist you?"></textarea>
-              </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-7 pr-5 pb-5 mb-5 col-divider">
+            <div class="mb-3">
+              <h4>We'll follow up</h4>
             </div>
-            <button type="submit" class="btn btn-primary text-white">Submit</button>
-          </form>
 
-        </div>
-        <div class="col-lg-5">
-          <div class="mb-5">
-            <h6>Call us</h6>
-            <p class="mb-0">Questions about plans, pricing, or availability?</p>
-            <a class="bold" href="tel:469-476-2456">469-476-2456</a>
+            <form id='test' name="Contact Form" method="POST" netlify="netlify">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label>Name</label>
+                  <input name="name" type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group col-md-12">
+                  <label>Email</label>
+                  <input name="email" type="text" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Message</label>
+                    <textarea name="message" type="text" class="form-control" placeholder="How can we assist you?"></textarea>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label>Would you like to place an order?</label>
+                  <div>
+                    <div class="form-check form-check-inline">
+                      <input id="placeOrderTrue" class="form-check-input js-radioCheck" type="radio" name="placeOrder"  value="true">
+                      <label class="form-check-label" for="placeOrder2">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input id="placeOrderFalse" class="form-check-input js-radioCheck" type="radio" name="placeOrder" value="false" checked>
+                      <label class="form-check-label" for="placeOrder2">No</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="form-giftbox" class="d-none">
+                  <div class="row">
+                    <div class="form-group col-12">
+                      <label>Name of recipient</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Recepient's Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label>Favorite Color</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Red, Blue, Green">
+                    </div>
+                    <div class="col">
+                      <label>Favorite Candy</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Reeses, Starburst">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label>Favorite Beverage</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Sprite, Coca Cola">
+                    </div>
+                    <div class="col">
+                      <label>Clothing Size</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="S / M / L">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-12">
+                      <label>Additional Hobbies</label>
+                      <textarea name="recipient" type="text" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label>Shipping Address</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Where should we ship the gift?">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label>Allergies</label>
+                      <input name="recipient" type="text" class="form-control" placeholder="Peanuts, Chocolate">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <button type="submit" class="btn btn-primary text-white">Submit</button>
+            </form>
+
           </div>
+          <div class="col-lg-5">
+            <div class="mb-5">
+              <h6>Call us</h6>
+              <p class="mb-0">Questions about plans, pricing, or availability?</p>
+              <a class="bold" href="tel:469-476-2456">469-476-2456</a>
+            </div>
 
-          <div class="mb-5">
-            <h6>Schedule a consultation</h6>
-            <p class="mb-0">Schedule a consultation to create your perfect gift basket or event. <button class="btn btn-link p-0" data-toggle="modal" data-target="#ctaModal">Get started</button></p>
-          </div>
+            <div class="mb-5">
+              <h6>Schedule a consultation</h6>
+              <p class="mb-0">Schedule a consultation to create your perfect gift basket or event.
+                <button class="btn btn-link p-0" data-toggle="modal" data-target="#ctaModal">Get started</button>
+              </p>
+            </div>
 
-          <div>
-            <h6>Not quite ready to talk to someone?</h6>
-            <p>Check out our <a href="/faq">comprehensive FAQ</a></p>
+            <div>
+              <h6>Not quite ready to talk to someone?</h6>
+              <p>Check out our
+                <a href="/faq">comprehensive FAQ</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {{ partial "cta-modal.html" . }}
-  
-</main>
+    {{ partial "cta-modal.html" . }}
+
+  </main>
 {{ end }}
 
 {{ define "extra-scripts" }}
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  <script>
+    
+    function handleClick() {
+      var classList = document.getElementById('form-giftbox').classList
+      if (this.value === 'true' && this.checked) {
+        classList.remove('d-none')
+      } else {
+        classList.add('d-none')
+      }
+    }
+    
+    var radios = document.querySelectorAll('.js-radioCheck')
+    radios.forEach(function (radio) {
+      radio.onclick = handleClick
+    })
+  </script>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 {{ end }}
