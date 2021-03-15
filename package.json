@@ -13,7 +13,7 @@
     "webpack-prod": "webpack --mode production --env.production"
   },
   "keywords": [],
-  "author": "Armon Raphiel <araphiel@gmail.com?",
+  "author": "Armon Raphiel <araphiel@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
