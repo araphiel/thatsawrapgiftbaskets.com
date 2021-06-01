@@ -20,7 +20,7 @@
     "jquery": "^3.5.0",
     "magic-grid": "^3.2.4",
     "popper.js": "^1.16.0",
-    "stripe": "^8.138.0"
+    "stripe": "^8.150.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
